@@ -21,7 +21,7 @@ export default function Contact() {
             <a className="text-primary transition-colors text-sm font-label" href="/contact">للتواصل</a>
           </div>
           <div className="flex items-center gap-6">
-            <a href="/contact" className="gold-gradient text-on-primary px-6 py-2.5 rounded-md font-label text-sm font-bold shadow-lg">
+            <a href="https://calendly.com/saidjabouri02/30min" target="_blank" rel="noopener noreferrer" className="gold-gradient text-on-primary px-6 py-2.5 rounded-md font-label text-sm font-bold shadow-lg">
               احجز استشارتك
             </a>
           </div>
