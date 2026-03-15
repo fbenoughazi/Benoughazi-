@@ -297,7 +297,7 @@ export default function Home() {
                 </div>
                 <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
                   <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">البريد الإلكتروني</label>
-                  <input className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm text-left" type="email" placeholder="email@example.com" dir="ltr" />
+                  <input className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm text-right" type="email" placeholder="email@example.com" dir="rtl" />
                 </div>
               </div>
               <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
