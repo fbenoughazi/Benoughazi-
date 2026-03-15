@@ -54,9 +54,9 @@ export default function Home() {
               <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
               تحديد موعد استشارة
             </a>
-            <button className="border border-outline-variant text-on-surface px-10 py-4 rounded-md font-label text-base hover:bg-surface-container transition-colors">
+            <a href="/interests" className="border border-outline-variant text-on-surface px-10 py-4 rounded-md font-label text-base hover:bg-surface-container transition-colors inline-block text-center">
               اكتشف مجالات الخبرة
-            </button>
+            </a>
           </div>
         </div>
       </section>
