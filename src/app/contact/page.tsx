@@ -2,31 +2,12 @@ import { Section } from "@/components/Section";
 import { SectionTitle } from "@/components/SectionTitle";
 import { HeroBanner } from "@/components/HeroBanner";
 import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
 
 export default function Contact() {
   return (
     <>
-      {/* Top Navigation Bar */}
-      <nav className="fixed top-0 w-full z-50 glass-nav h-20">
-        <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between h-full">
-          <div className="flex items-center gap-4">
-            <a href="/">
-              <img src="/fatimalogo.png" alt="Maître Fatima Logo" className="h-10 w-auto" />
-            </a>
-          </div>
-          <div className="hidden lg:flex items-center gap-8">
-            <a className="text-on-surface-variant hover:text-primary transition-colors text-sm font-label" href="/">الرئيسية</a>
-            <a className="text-on-surface-variant hover:text-primary transition-colors text-sm font-label" href="/bio">بطاقة تعريفية</a>
-            <a className="text-on-surface-variant hover:text-primary transition-colors text-sm font-label" href="/interests">مجالات الخبرة</a>
-            <a className="text-primary transition-colors text-sm font-label" href="/contact">للتواصل</a>
-          </div>
-          <div className="flex items-center gap-6">
-            <a href="https://calendly.com/saidjabouri02/30min" target="_blank" rel="noopener noreferrer" className="gold-gradient text-on-primary px-6 py-2.5 rounded-md font-label text-sm font-bold shadow-lg">
-              احجز استشارتك
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       <HeroBanner title="للتواصل" />
       {/* Contact Section */}
