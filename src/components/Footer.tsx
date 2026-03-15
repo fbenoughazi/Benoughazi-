@@ -45,7 +45,7 @@ export function Footer() {
           {/* Action Buttons */}
           <div className="space-y-4 lg:flex lg:flex-col lg:justify-start">
             <h4 className="text-on-surface font-headline font-bold text-lg mb-4">خدماتنا</h4>
-            <a href="/contact" className="gold-gradient text-on-primary px-8 py-3 rounded-md font-label text-sm font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity w-full text-center">
+            <a href="https://calendly.com/saidjabouri02/30min" target="_blank" rel="noopener noreferrer" className="gold-gradient text-on-primary px-8 py-3 rounded-md font-label text-sm font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity w-full text-center">
               <span className="material-symbols-outlined text-lg" data-icon="calendar_today">calendar_today</span>
               تحديد موعد استشارة
             </a>

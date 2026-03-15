@@ -19,7 +19,7 @@ export default function Home() {
             <a className="text-on-surface-variant hover:text-primary transition-colors text-sm font-label" href="/contact">للتواصل</a>
           </div>
           <div className="flex items-center gap-6">
-            <a href="/contact" className="gold-gradient text-on-primary px-6 py-2.5 rounded-md font-label text-sm font-bold shadow-lg">
+            <a href="https://calendly.com/saidjabouri02/30min" target="_blank" rel="noopener noreferrer" className="gold-gradient text-on-primary px-6 py-2.5 rounded-md font-label text-sm font-bold shadow-lg">
               احجز استشارتك
             </a>
           </div>
@@ -50,10 +50,10 @@ export default function Home() {
             <span className="text-lg text-on-surface-variant font-body opacity-80">Expertise Juridique Internationale &amp; Conseil Stratégique</span>
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="gold-gradient text-on-primary px-10 py-4 rounded-md font-label text-base font-bold flex items-center gap-2">
+            <a href="https://calendly.com/saidjabouri02/30min" target="_blank" rel="noopener noreferrer" className="gold-gradient text-on-primary px-10 py-4 rounded-md font-label text-base font-bold flex items-center gap-2">
               <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
               تحديد موعد استشارة
-            </button>
+            </a>
             <button className="border border-outline-variant text-on-surface px-10 py-4 rounded-md font-label text-base hover:bg-surface-container transition-colors">
               اكتشف مجالات الخبرة
             </button>
