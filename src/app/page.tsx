@@ -187,43 +187,51 @@ export default function Home() {
         {/* Soft Organic Diffused Gold Glow */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-[#D4A745]/20 via-[#B8860B]/10 to-transparent blur-[100px] pointer-events-none z-0 translate-y-1/4 rounded-full"></div>
         
-        <SectionTitle className="text-center text-white mb-20 relative z-20">منهجية العمل</SectionTitle>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-20">
+        <SectionTitle className="text-center text-white mb-6 relative z-20">منهجية العمل</SectionTitle>
+        <p className="text-center text-[rgba(255,255,255,0.7)] max-w-2xl mx-auto mb-20 text-lg leading-relaxed relative z-20">
+          خبرة قانونية راسخة ومنهجية عمل دقيقة، نضعها في خدمة عملائنا لحماية حقوقهم وتحقيق أهدافهم بكل احترافية
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-20">
           
           {/* Item 1 */}
-          <div className="text-center group flex flex-col items-center">
-            <div className="w-[64px] h-[64px] rounded-[14px] bg-white/[0.04] backdrop-blur-[12px] border border-[#D4A745]/15 flex items-center justify-center mb-6 transition-all duration-500 group-hover:border-[#D4A745]/30 group-hover:shadow-[0_0_20px_rgba(212,167,69,0.15)] group-hover:bg-white/[0.06]">
-              <span className="material-symbols-outlined text-[#D4A745] text-[32px] transition-transform duration-500 group-hover:scale-110" data-icon="psychology">psychology</span>
+          <div className="bg-[#1c1c1c] p-8 md:p-10 rounded-2xl text-center group flex flex-col items-center relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-10px_rgba(212,167,69,0.15)] border border-white/[0.02] hover:border-[#D4A745]/30">
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#D4A745]/10 to-transparent pointer-events-none transition-opacity duration-700 opacity-50 group-hover:opacity-100"></div>
+            <div className="mb-6 relative z-10">
+              <span className="material-symbols-outlined text-[#D4A745] text-[56px] transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1" data-icon="psychology">psychology</span>
             </div>
-            <h4 className="text-lg font-bold text-white mb-3 tracking-wide">نهج شمولي</h4>
-            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed max-w-[280px]">الجمع بين العمق الأكاديمي والخبرة الميدانية لتقديم أدق التحليلات.</p>
+            <h4 className="text-xl font-bold text-white mb-4 tracking-wide relative z-10 transition-colors group-hover:text-[#D4A745]">نهج شمولي</h4>
+            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed relative z-10">الجمع بين العمق الأكاديمي والخبرة الميدانية لتقديم أدق التحليلات.</p>
           </div>
           
           {/* Item 2 */}
-          <div className="text-center group flex flex-col items-center">
-            <div className="w-[64px] h-[64px] rounded-[14px] bg-white/[0.04] backdrop-blur-[12px] border border-[#D4A745]/15 flex items-center justify-center mb-6 transition-all duration-500 group-hover:border-[#D4A745]/30 group-hover:shadow-[0_0_20px_rgba(212,167,69,0.15)] group-hover:bg-white/[0.06]">
-              <span className="material-symbols-outlined text-[#D4A745] text-[32px] transition-transform duration-500 group-hover:scale-110" data-icon="record_voice_over">record_voice_over</span>
+          <div className="bg-[#1c1c1c] p-8 md:p-10 rounded-2xl text-center group flex flex-col items-center relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-10px_rgba(212,167,69,0.15)] border border-white/[0.02] hover:border-[#D4A745]/30">
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#D4A745]/10 to-transparent pointer-events-none transition-opacity duration-700 opacity-50 group-hover:opacity-100"></div>
+            <div className="mb-6 relative z-10">
+              <span className="material-symbols-outlined text-[#D4A745] text-[56px] transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1" data-icon="record_voice_over">record_voice_over</span>
             </div>
-            <h4 className="text-lg font-bold text-white mb-3 tracking-wide">الاستماع النشط</h4>
-            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed max-w-[280px]">فهم احتياجات العميل بدقة هو الخطوة الأولى نحو نجاح القضية.</p>
+            <h4 className="text-xl font-bold text-white mb-4 tracking-wide relative z-10 transition-colors group-hover:text-[#D4A745]">الاستماع النشط</h4>
+            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed relative z-10">فهم احتياجات العميل بدقة هو الخطوة الأولى نحو نجاح القضية.</p>
           </div>
           
           {/* Item 3 */}
-          <div className="text-center group flex flex-col items-center">
-            <div className="w-[64px] h-[64px] rounded-[14px] bg-white/[0.04] backdrop-blur-[12px] border border-[#D4A745]/15 flex items-center justify-center mb-6 transition-all duration-500 group-hover:border-[#D4A745]/30 group-hover:shadow-[0_0_20px_rgba(212,167,69,0.15)] group-hover:bg-white/[0.06]">
-              <span className="material-symbols-outlined text-[#D4A745] text-[32px] transition-transform duration-500 group-hover:scale-110" data-icon="clinical_notes">clinical_notes</span>
+          <div className="bg-[#1c1c1c] p-8 md:p-10 rounded-2xl text-center group flex flex-col items-center relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-10px_rgba(212,167,69,0.15)] border border-white/[0.02] hover:border-[#D4A745]/30">
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#D4A745]/10 to-transparent pointer-events-none transition-opacity duration-700 opacity-50 group-hover:opacity-100"></div>
+            <div className="mb-6 relative z-10">
+              <span className="material-symbols-outlined text-[#D4A745] text-[56px] transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1" data-icon="clinical_notes">clinical_notes</span>
             </div>
-            <h4 className="text-lg font-bold text-white mb-3 tracking-wide">التشخيص القانوني</h4>
-            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed max-w-[280px]">دراسة دقيقة للمخاطر والفرص المتاحة لكل ملف قانوني.</p>
+            <h4 className="text-xl font-bold text-white mb-4 tracking-wide relative z-10 transition-colors group-hover:text-[#D4A745]">التشخيص القانوني</h4>
+            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed relative z-10">دراسة دقيقة للمخاطر والفرص المتاحة لكل ملف قانوني.</p>
           </div>
           
           {/* Item 4 */}
-          <div className="text-center group flex flex-col items-center">
-            <div className="w-[64px] h-[64px] rounded-[14px] bg-white/[0.04] backdrop-blur-[12px] border border-[#D4A745]/15 flex items-center justify-center mb-6 transition-all duration-500 group-hover:border-[#D4A745]/30 group-hover:shadow-[0_0_20px_rgba(212,167,69,0.15)] group-hover:bg-white/[0.06]">
-              <span className="material-symbols-outlined text-[#D4A745] text-[32px] transition-transform duration-500 group-hover:scale-110" data-icon="translate">translate</span>
+          <div className="bg-[#1c1c1c] p-8 md:p-10 rounded-2xl text-center group flex flex-col items-center relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-10px_rgba(212,167,69,0.15)] border border-white/[0.02] hover:border-[#D4A745]/30">
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#D4A745]/10 to-transparent pointer-events-none transition-opacity duration-700 opacity-50 group-hover:opacity-100"></div>
+            <div className="mb-6 relative z-10">
+              <span className="material-symbols-outlined text-[#D4A745] text-[56px] transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1" data-icon="translate">translate</span>
             </div>
-            <h4 className="text-lg font-bold text-white mb-3 tracking-wide">تعدد اللغات</h4>
-            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed max-w-[280px]">التواصل الفعال بالعربية والفرنسية والإنجليزية لخدمة عملاء دوليين.</p>
+            <h4 className="text-xl font-bold text-white mb-4 tracking-wide relative z-10 transition-colors group-hover:text-[#D4A745]">تعدد اللغات</h4>
+            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed relative z-10">التواصل الفعال بالعربية والفرنسية والإنجليزية لخدمة عملاء دوليين.</p>
           </div>
 
         </div>
