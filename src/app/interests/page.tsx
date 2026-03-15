@@ -21,7 +21,7 @@ export default function Interests() {
           <p className="text-secondary opacity-80 max-w-2xl mx-auto">نقدم حلولاً قانونية متكاملة تغطي مختلف جوانب القانون المدني والتجاري والاداري، بلمسة مهنية عالمية.</p>
         </div>
         {/* Bento Grid Layout for Expertise */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-10">
           {/* Card 1 */}
           <Card className="expertise-card p-8 flex flex-col gap-4">
             <span className="material-symbols-outlined text-primary text-4xl" data-icon="balance">balance</span>

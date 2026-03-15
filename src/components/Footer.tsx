@@ -13,7 +13,6 @@ export function Footer() {
               محامية لدى هيئة المحامين بطنجة<br />
               Expertise Juridique Internationale &amp; Conseil Stratégique
             </p>
-            <p className="text-on-surface-variant text-sm pt-4">© 2024 Maître Fatima Ezzahra Benoughazi. All Rights Reserved.</p>
           </div>
 
           {/* Quick Links */}
@@ -54,6 +53,11 @@ export function Footer() {
             </a>
           </div>
 
+        </div>
+        
+        {/* Copyright at the bottom */}
+        <div className="mt-12 pt-8 border-t border-white/10 text-center md:text-right">
+          <p className="text-on-surface-variant text-sm font-label">© 2024 Maître Fatima Ezzahra Benoughazi. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

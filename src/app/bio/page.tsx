@@ -32,32 +32,32 @@ export default function Bio() {
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
-               <Card className="expertise-card p-8 flex flex-col gap-4">
-                  <span className="material-symbols-outlined text-primary text-4xl" data-icon="school">school</span>
-                  <h4 className="text-xl font-headline font-bold text-on-surface">التكوين الأكاديمي</h4>
-                  <p className="text-on-surface-variant text-sm leading-relaxed">
-                    تلقت الأستاذة بنوغازي فاطمة الزهراء تكوينها الأكاديمي بجامعة عبد المالك السعدي بطنجة، حيث حصلت على الإجازة في القانون الخاص والماستر في القانون المدني والأعمال. كما حصلت لاحقًا على منحة تشيفنينغ (Chevening) المقدمة من وزارة الخارجية البريطانية، لمتابعة دراستها الجامعية بجامعة ساسكس (Sussex) بالمملكة المتحدة، متخصصة في مجال القانون والتنمية الدولية.
-                  </p>
-               </Card>
+            <div className="flex flex-col gap-4">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+                 <Card className="expertise-card p-8 flex flex-col gap-4">
+                    <span className="material-symbols-outlined text-primary text-4xl" data-icon="school">school</span>
+                    <h4 className="text-xl font-headline font-bold text-on-surface">التكوين الأكاديمي</h4>
+                    <p className="text-on-surface-variant text-sm leading-relaxed">
+                      تلقت الأستاذة بنوغازي فاطمة الزهراء تكوينها الأكاديمي بجامعة عبد المالك السعدي بطنجة، حيث حصلت على الإجازة في القانون الخاص والماستر في القانون المدني والأعمال. كما حصلت لاحقًا على منحة تشيفنينغ (Chevening) المقدمة من وزارة الخارجية البريطانية، لمتابعة دراستها الجامعية بجامعة ساسكس (Sussex) بالمملكة المتحدة، متخصصة في مجال القانون والتنمية الدولية.
+                    </p>
+                 </Card>
 
-               <Card className="expertise-card p-8 flex flex-col gap-4">
-                  <span className="material-symbols-outlined text-primary text-4xl" data-icon="gavel">gavel</span>
-                  <h4 className="text-xl font-headline font-bold text-on-surface">الخبرة العملية</h4>
-                  <p className="text-on-surface-variant text-sm leading-relaxed">
-                    راكمت الأستاذة تكوينًا أكاديميًا متنوعًا يجمع بين القانون والتنمية، إلى جانب خبرة عملية وتجربة ميدانية على المستويين الوطني والدولي، مما مكّنها من اعتماد مقاربة شمولية في التعاطي مع القضايا القانونية ذات الأبعاد المتعددة.
-                  </p>
-               </Card>
-            </div>
+                 <Card className="expertise-card p-8 flex flex-col gap-4">
+                    <span className="material-symbols-outlined text-primary text-4xl" data-icon="gavel">gavel</span>
+                    <h4 className="text-xl font-headline font-bold text-on-surface">الخبرة العملية</h4>
+                    <p className="text-on-surface-variant text-sm leading-relaxed">
+                      راكمت الأستاذة تكوينًا أكاديميًا متنوعًا يجمع بين القانون والتنمية، إلى جانب خبرة عملية وتجربة ميدانية على المستويين الوطني والدولي، مما مكّنها من اعتماد مقاربة شمولية في التعاطي مع القضايا القانونية ذات الأبعاد المتعددة.
+                    </p>
+                 </Card>
+              </div>
 
-            <div className="pt-2">
-               <Card className="expertise-card p-8 flex flex-col gap-4 bg-surface-container">
-                  <span className="material-symbols-outlined text-primary text-4xl" data-icon="psychology">psychology</span>
-                  <h4 className="text-xl font-headline font-bold text-on-surface">منهجية العمل</h4>
-                  <p className="text-on-surface-variant text-sm leading-relaxed">
-                    ترتكز منهجية العمل على الاستماع الجيد للموكل، والتشخيص القانوني الدقيق للملفات، واعتماد أنسب المساطر القانونية، مع مواكبة مستمرة إلى غاية التوصل إلى الحل القانوني المناسب، مع ضمان تواصل فعّال بثلاث لغات: العربية والفرنسية والإنجليزية.
-                  </p>
-               </Card>
+              <Card className="expertise-card p-8 flex flex-col gap-4 bg-surface-container">
+                 <span className="material-symbols-outlined text-primary text-4xl" data-icon="psychology">psychology</span>
+                 <h4 className="text-xl font-headline font-bold text-on-surface">منهجية العمل</h4>
+                 <p className="text-on-surface-variant text-sm leading-relaxed">
+                   ترتكز منهجية العمل على الاستماع الجيد للموكل، والتشخيص القانوني الدقيق للملفات، واعتماد أنسب المساطر القانونية، مع مواكبة مستمرة إلى غاية التوصل إلى الحل القانوني المناسب، مع ضمان تواصل فعّال بثلاث لغات: العربية والفرنسية والإنجليزية.
+                 </p>
+              </Card>
             </div>
             
           </div>
