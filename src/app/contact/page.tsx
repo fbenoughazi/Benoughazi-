@@ -62,24 +62,27 @@ export default function Contact() {
               <SectionTitle className="mb-2">تواصل معنا</SectionTitle>
             </div>
 
-            <form className="relative z-10 space-y-5">
+            <form action="https://formsubmit.co/fbenoughazi@gmail.com" method="POST" className="relative z-10 space-y-5">
+              <input type="hidden" name="_subject" value="رسالة جديدة المرجو الرد - استشارة قانونية" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
               <div className="grid grid-cols-2 gap-5">
                 <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
                   <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">الاسم الكامل</label>
-                  <input className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="محمد أحمد" />
+                  <input name="name" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="محمد أحمد" />
                 </div>
                 <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
                   <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">البريد الإلكتروني</label>
-                  <input className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm text-right" type="email" placeholder="email@example.com" dir="rtl" />
+                  <input name="email" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm text-right" type="email" placeholder="email@example.com" dir="rtl" />
                 </div>
               </div>
               <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
                 <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">الموضوع</label>
-                <input className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="استشارة قانونية" />
+                <input name="subject" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="استشارة قانونية" />
               </div>
               <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
                 <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">رسالتك</label>
-                <textarea className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm resize-none" rows={4} placeholder="تفاصيل بخصوص طلبك..."></textarea>
+                <textarea name="message" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm resize-none" rows={4} placeholder="تفاصيل بخصوص طلبك..."></textarea>
               </div>
               <button className="w-full bg-[#D4A745] hover:bg-[#B8860B] text-black py-4 rounded-2xl font-bold uppercase tracking-wider transition-colors mt-2" type="submit">
                 إرسال الرسالة
