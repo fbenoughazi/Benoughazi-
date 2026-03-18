@@ -1,5 +1,5 @@
 import { Section } from "@/components/Section";
-import { SectionTitle } from "@/components/SectionTitle";
+
 import { Card } from "@/components/Card";
 import { HeroBanner } from "@/components/HeroBanner";
 import { Footer } from "@/components/Footer";
@@ -16,10 +16,7 @@ export default function Interests() {
         {/* Soft Ambient Gold Glow */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/[0.08] rounded-full blur-[140px] pointer-events-none translate-x-1/4 -translate-y-1/4 z-0"></div>
 
-        <div className="text-center mb-20 relative z-10">
-          <SectionTitle className="lg:text-5xl text-on-surface mb-4">مجالات الخبرة</SectionTitle>
-          <p className="text-secondary opacity-80 max-w-2xl mx-auto">نقدم حلولاً قانونية متكاملة تغطي مختلف جوانب القانون المدني والتجاري والاداري، بلمسة مهنية عالمية.</p>
-        </div>
+
         {/* Bento Grid Layout for Expertise */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-10">
           {/* Card 1 */}

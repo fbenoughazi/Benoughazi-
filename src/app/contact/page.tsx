@@ -87,18 +87,6 @@ export default function Contact() {
             </form>
           </div>
         </div>
-        
-        {/* Map Section */}
-        <div className="mt-20 rounded-2xl overflow-hidden border border-outline-variant/20 shadow-xl h-[400px]">
-          <iframe 
-            src="https://maps.google.com/maps?q=35.7744861,-5.7996878&t=&z=16&ie=UTF8&iwloc=&output=embed"
-            className="w-full h-full grayscale invert contrast-125 opacity-80 mix-blend-luminosity"
-            style={{ border: 0 }} 
-            allowFullScreen={false} 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
       </Section>
 
       {/* Footer */}

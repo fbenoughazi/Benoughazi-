@@ -14,9 +14,9 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-l from-surface via-surface/80 to-transparent"></div>
           <img
-            alt="Panorama of Tangier"
-            className="w-full h-full object-cover object-[center_30%] opacity-50 grayscale contrast-125"
-            src="/tanger.jpg"
+            alt="Lady Justice"
+            className="w-full h-full object-cover object-[center_30%] opacity-50"
+            src="/lawyer%20tanger.png"
           />
           {/* Elegant multi-layer gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-surface/40 to-surface/90"></div>
@@ -32,15 +32,7 @@ export default function Home() {
             محامية لدى هيئة المحامين بطنجة <br />
             <span className="text-lg text-on-surface-variant font-body opacity-80">Expertise Juridique Internationale &amp; Conseil Stratégique</span>
           </p>
-          <div className="flex flex-wrap gap-4">
-            <a href="https://calendly.com/saidjabouri02/30min" target="_blank" rel="noopener noreferrer" className="gold-gradient text-on-primary px-10 py-4 rounded-md font-label text-base font-bold flex items-center gap-2">
-              <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
-              تحديد موعد استشارة
-            </a>
-            <a href="/interests" className="border border-outline-variant text-on-surface px-10 py-4 rounded-md font-label text-base hover:bg-surface-container transition-colors inline-block text-center">
-              اكتشف مجالات الخبرة
-            </a>
-          </div>
+
         </div>
       </section>
 
@@ -66,32 +58,11 @@ export default function Home() {
             </SectionTitle>
             <div className="space-y-6 text-on-surface-variant leading-relaxed text-lg font-body">
               <p>
-                الأستاذة فاطمة الزهراء بنوغازي، خريجة جامعة عبد المالك السعدي وحاصلة على منحة
-                <span className="text-primary">Chevening</span> المرموقة من جامعة
-                <span className="text-primary">Sussex</span> بالمملكة المتحدة.
+                الأستاذة بنوغازي فاطمة الزهراء محامية بهيئة المحامين بطنجة، راكمت تجربة مهنية متنوعة في معالجة الملفات القانونية والترافع أمام مختلف المحاكم، التمثيل القانوني للأفراد والشركات، والدفاع عن الحقوق والمصالح القانونية مع اهتمام خاص بالقضايا ذات البعد الحقوقي والاجتماعي والدولي.
               </p>
               <p>
-                تتمتع بمسار أكاديمي متميز يجمع بين المدارس القانونية المغربية والدولية، مما يمنحها رؤية شاملة وعميقة للقضايا المعقدة. تخصصت في القانون الدولي والتنمية، مع تركيز خاص على حماية المصالح القانونية في سياق معولم.
+                تلقت الأستاذة بنوغازي فاطمة الزهراء تكوينها الأكاديمي بجامعة عبد المالك السعدي بطنجة، حيث حصلت على الإجازة في القانون الخاص والماستر في القانون المدني والأعمال. كما حصلت لاحقًا على منحة تشيفنينغ (Chevening) المقدمة من وزارة الخارجية البريطانية، لمتابعة دراستها الجامعية بجامعة ساسكس (Sussex) بالمملكة المتحدة، متخصصة في مجال القانون والتنمية الدولية.
               </p>
-              <p>
-                تؤمن الأستاذة بأن المحاماة ليست مجرد ترافع في المحاكم، بل هي مرافقة استراتيجية تهدف إلى استباق النزاعات وتأمين المشاريع الاستثمارية والمدنية لعملائها.
-              </p>
-            </div>
-            <div className="flex gap-8 py-6">
-              <div className="text-center">
-                <p className="text-3xl font-headline font-bold text-primary">Intl</p>
-                <p className="text-xs uppercase text-outline">Expertise</p>
-              </div>
-              <div className="w-px h-12 bg-outline-variant"></div>
-              <div className="text-center">
-                <p className="text-3xl font-headline font-bold text-primary">3+</p>
-                <p className="text-xs uppercase text-outline">Languages</p>
-              </div>
-              <div className="w-px h-12 bg-outline-variant"></div>
-              <div className="text-center">
-                <p className="text-3xl font-headline font-bold text-primary">UK</p>
-                <p className="text-xs uppercase text-outline">Educated</p>
-              </div>
             </div>
           </div>
         </div>
@@ -104,7 +75,7 @@ export default function Home() {
 
         <div className="text-center mb-20 relative z-10">
           <SectionTitle className="lg:text-5xl text-on-surface mb-4">مجالات الخبرة</SectionTitle>
-          <p className="text-secondary opacity-80 max-w-2xl mx-auto">نقدم حلولاً قانونية متكاملة تغطي مختلف جوانب القانون المدني والتجاري والاداري، بلمسة مهنية عالمية.</p>
+
         </div>
         {/* Bento Grid Layout for Expertise */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-10">
@@ -165,60 +136,6 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Methodology Section (منهجية العمل) */}
-      <Section id="methodology" className="py-32 bg-[#1A1A1A] text-white relative overflow-hidden" containerClassName="container mx-auto px-6 lg:px-12 relative z-10">
-        {/* Soft Organic Diffused Gold Glow */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-[#D4A745]/20 via-[#B8860B]/10 to-transparent blur-[100px] pointer-events-none z-0 translate-y-1/4 rounded-full"></div>
-        
-        <SectionTitle className="text-center text-white mb-6 relative z-20">منهجية العمل</SectionTitle>
-        <p className="text-center text-[rgba(255,255,255,0.7)] max-w-2xl mx-auto mb-20 text-lg leading-relaxed relative z-20">
-          خبرة قانونية راسخة ومنهجية عمل دقيقة، نضعها في خدمة عملائنا لحماية حقوقهم وتحقيق أهدافهم بكل احترافية
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 relative z-20">
-          
-          {/* Item 1 */}
-          <div className="bg-[#1c1c1c] p-8 md:p-10 rounded-2xl text-center group flex flex-col items-center relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-10px_rgba(212,167,69,0.15)] border border-white/[0.02] hover:border-[#D4A745]/30">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#D4A745]/10 to-transparent pointer-events-none transition-opacity duration-700 opacity-50 group-hover:opacity-100"></div>
-            <div className="mb-6 relative z-10">
-              <span className="material-symbols-outlined text-[#D4A745] text-[56px] transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1" data-icon="psychology">psychology</span>
-            </div>
-            <h4 className="text-xl font-bold text-white mb-4 tracking-wide relative z-10 transition-colors group-hover:text-[#D4A745]">نهج شمولي</h4>
-            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed relative z-10">الجمع بين العمق الأكاديمي والخبرة الميدانية لتقديم أدق التحليلات.</p>
-          </div>
-          
-          {/* Item 2 */}
-          <div className="bg-[#1c1c1c] p-8 md:p-10 rounded-2xl text-center group flex flex-col items-center relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-10px_rgba(212,167,69,0.15)] border border-white/[0.02] hover:border-[#D4A745]/30">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#D4A745]/10 to-transparent pointer-events-none transition-opacity duration-700 opacity-50 group-hover:opacity-100"></div>
-            <div className="mb-6 relative z-10">
-              <span className="material-symbols-outlined text-[#D4A745] text-[56px] transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1" data-icon="record_voice_over">record_voice_over</span>
-            </div>
-            <h4 className="text-xl font-bold text-white mb-4 tracking-wide relative z-10 transition-colors group-hover:text-[#D4A745]">الاستماع النشط</h4>
-            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed relative z-10">فهم احتياجات العميل بدقة هو الخطوة الأولى نحو نجاح القضية.</p>
-          </div>
-          
-          {/* Item 3 */}
-          <div className="bg-[#1c1c1c] p-8 md:p-10 rounded-2xl text-center group flex flex-col items-center relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-10px_rgba(212,167,69,0.15)] border border-white/[0.02] hover:border-[#D4A745]/30">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#D4A745]/10 to-transparent pointer-events-none transition-opacity duration-700 opacity-50 group-hover:opacity-100"></div>
-            <div className="mb-6 relative z-10">
-              <span className="material-symbols-outlined text-[#D4A745] text-[56px] transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1" data-icon="clinical_notes">clinical_notes</span>
-            </div>
-            <h4 className="text-xl font-bold text-white mb-4 tracking-wide relative z-10 transition-colors group-hover:text-[#D4A745]">التشخيص القانوني</h4>
-            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed relative z-10">دراسة دقيقة للمخاطر والفرص المتاحة لكل ملف قانوني.</p>
-          </div>
-          
-          {/* Item 4 */}
-          <div className="bg-[#1c1c1c] p-8 md:p-10 rounded-2xl text-center group flex flex-col items-center relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-10px_rgba(212,167,69,0.15)] border border-white/[0.02] hover:border-[#D4A745]/30">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#D4A745]/10 to-transparent pointer-events-none transition-opacity duration-700 opacity-50 group-hover:opacity-100"></div>
-            <div className="mb-6 relative z-10">
-              <span className="material-symbols-outlined text-[#D4A745] text-[56px] transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1" data-icon="translate">translate</span>
-            </div>
-            <h4 className="text-xl font-bold text-white mb-4 tracking-wide relative z-10 transition-colors group-hover:text-[#D4A745]">تعدد اللغات</h4>
-            <p className="text-[rgba(255,255,255,0.6)] text-sm leading-relaxed relative z-10">التواصل الفعال بالعربية والفرنسية والإنجليزية لخدمة عملاء دوليين.</p>
-          </div>
-
-        </div>
-      </Section>
 
       {/* Contact Section */}
       <Section id="contact" className="py-32 bg-surface">

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,27 +19,22 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20 w-full">
           {/* Logo */}
           <div className="flex items-center gap-4">
-            <a href="/">
+            <Link href="/">
               <img src="/fatimalogo.png" alt="Maître Fatima Logo" className="h-10 w-auto" />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-8">
-            <a className={getLinkClass("/")} href="/">الرئيسية</a>
-            <a className={getLinkClass("/bio")} href="/bio">بطاقة تعريفية</a>
-            <a className={getLinkClass("/interests")} href="/interests">مجالات الخبرة</a>
-            <a className={getLinkClass("/contact")} href="/contact">للتواصل</a>
+            <Link className={getLinkClass("/")} href="/">الرئيسية</Link>
+            <Link className={getLinkClass("/bio")} href="/bio">بطاقة تعريفية</Link>
+            <Link className={getLinkClass("/interests")} href="/interests">مجالات الخبرة</Link>
+            <Link className={getLinkClass("/contact")} href="/contact">للتواصل</Link>
           </div>
 
           {/* Action Button & Mobile Toggle */}
           <div className="flex items-center gap-4">
-            {/* Desktop Action Button */}
-            <div className="hidden lg:block">
-              <a href="https://calendly.com/saidjabouri02/30min" target="_blank" rel="noopener noreferrer" className="gold-gradient text-on-primary px-6 py-2.5 rounded-md font-label text-sm font-bold shadow-lg">
-                احجز استشارتك
-              </a>
-            </div>
+
             {/* Mobile Menu Toggle */}
             <button 
               className="lg:hidden text-white p-2"
@@ -52,13 +48,10 @@ export function Navbar() {
         {/* Mobile Dropdown Menu */}
         {isOpen && (
           <div className="lg:hidden flex flex-col gap-6 pt-4 pb-8 border-t border-white/10">
-            <a className={getLinkClass("/")} href="/">الرئيسية</a>
-            <a className={getLinkClass("/bio")} href="/bio">بطاقة تعريفية</a>
-            <a className={getLinkClass("/interests")} href="/interests">مجالات الخبرة</a>
-            <a className={getLinkClass("/contact")} href="/contact">للتواصل</a>
-            <a href="https://calendly.com/saidjabouri02/30min" target="_blank" rel="noopener noreferrer" className="gold-gradient text-on-primary px-6 py-3 rounded-md font-label text-sm font-bold shadow-lg text-center mt-2">
-              احجز استشارتك
-            </a>
+            <Link className={getLinkClass("/")} href="/">الرئيسية</Link>
+            <Link className={getLinkClass("/bio")} href="/bio">بطاقة تعريفية</Link>
+            <Link className={getLinkClass("/interests")} href="/interests">مجالات الخبرة</Link>
+            <Link className={getLinkClass("/contact")} href="/contact">للتواصل</Link>
           </div>
         )}
       </div>
