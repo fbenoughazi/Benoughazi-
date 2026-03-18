@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import { Section } from "@/components/Section";
 import { SectionTitle } from "@/components/SectionTitle";
 import { HeroBanner } from "@/components/HeroBanner";
@@ -5,6 +7,31 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 
 export default function Contact() {
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("submitting");
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/myknlago", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <>
       <Navbar />
@@ -38,7 +65,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-white font-bold text-lg mb-1">البريد الإلكتروني</p>
-                  <p className="text-white/60 text-sm tracking-wider transition-colors duration-500 group-hover:text-white/80">contact@benoughazilawfirm.com</p>
+                  <p className="text-white/60 text-sm tracking-wider transition-colors duration-500 group-hover:text-white/80">fbenoughazi@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-6 group cursor-pointer">
@@ -62,32 +89,54 @@ export default function Contact() {
               <SectionTitle className="mb-2">تواصل معنا</SectionTitle>
             </div>
 
-            <form action="https://formsubmit.co/fbenoughazi@gmail.com" method="POST" className="relative z-10 space-y-5">
-              <input type="hidden" name="_subject" value="رسالة جديدة المرجو الرد - استشارة قانونية" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
-              <div className="grid grid-cols-2 gap-5">
-                <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                  <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">الاسم الكامل</label>
-                  <input name="name" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="محمد أحمد" />
+            {status === "success" ? (
+              <div className="relative z-10 flex flex-col items-center justify-center py-16 text-center gap-6">
+                <div className="w-20 h-20 rounded-full bg-[#D4A745]/20 border border-[#D4A745]/40 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[#D4A745] text-4xl">check_circle</span>
+                </div>
+                <h3 className="text-white text-2xl font-bold">تم إرسال رسالتك بنجاح!</h3>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  شكراً على تواصلكم معنا. سيقوم فريقنا بالرد عليكم في أقرب وقت ممكن.
+                </p>
+                <button
+                  onClick={() => setStatus("idle")}
+                  className="mt-2 border border-[#D4A745]/50 text-[#D4A745] px-8 py-3 rounded-xl text-sm hover:bg-[#D4A745]/10 transition-colors"
+                >
+                  إرسال رسالة أخرى
+                </button>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="relative z-10 space-y-5">
+                <div className="grid grid-cols-2 gap-5">
+                  <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
+                    <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">الاسم الكامل</label>
+                    <input name="name" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="محمد أحمد" />
+                  </div>
+                  <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
+                    <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">البريد الإلكتروني</label>
+                    <input name="email" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="email" placeholder="email@example.com" dir="rtl" />
+                  </div>
                 </div>
                 <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                  <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">البريد الإلكتروني</label>
-                  <input name="email" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm text-right" type="email" placeholder="email@example.com" dir="rtl" />
+                  <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">الموضوع</label>
+                  <input name="subject" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="استشارة قانونية" />
                 </div>
-              </div>
-              <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">الموضوع</label>
-                <input name="subject" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="استشارة قانونية" />
-              </div>
-              <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">رسالتك</label>
-                <textarea name="message" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm resize-none" rows={4} placeholder="تفاصيل بخصوص طلبك..."></textarea>
-              </div>
-              <button className="w-full bg-[#D4A745] hover:bg-[#B8860B] text-black py-4 rounded-2xl font-bold uppercase tracking-wider transition-colors mt-2" type="submit">
-                إرسال الرسالة
-              </button>
-            </form>
+                <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
+                  <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">رسالتك</label>
+                  <textarea name="message" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm resize-none" rows={4} placeholder="تفاصيل بخصوص طلبك..."></textarea>
+                </div>
+                {status === "error" && (
+                  <p className="text-red-400 text-sm text-center">حدث خطأ أثناء الإرسال. يرجى المحاولة مجدداً.</p>
+                )}
+                <button
+                  className="w-full bg-[#D4A745] hover:bg-[#B8860B] text-black py-4 rounded-2xl font-bold uppercase tracking-wider transition-colors mt-2 disabled:opacity-60"
+                  type="submit"
+                  disabled={status === "submitting"}
+                >
+                  {status === "submitting" ? "جارِ الإرسال..." : "إرسال الرسالة"}
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </Section>
