@@ -3,6 +3,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -179,43 +180,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative p-10 rounded-[32px] border border-white/10 bg-[#0A0A0A]/60 backdrop-blur-2xl overflow-hidden shadow-2xl">
-            {/* Top gold glowing accent */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-[#D4A745]/60 to-transparent"></div>
-            {/* Soft radial glow entering from top center */}
-            <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-[#D4A745]/10 rounded-full blur-[80px] pointer-events-none"></div>
-
-            <div className="relative z-10 mb-8 text-center text-white">
-              <SectionTitle className="mb-2">تواصل معنا</SectionTitle>
-            </div>
-
-            <form action="https://formsubmit.co/fbenoughazi@gmail.com" method="POST" className="relative z-10 space-y-5">
-              <input type="hidden" name="_subject" value="رسالة جديدة المرجو الرد - استشارة قانونية" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
-              <div className="grid grid-cols-2 gap-5">
-                <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                  <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">الاسم الكامل</label>
-                  <input name="name" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="محمد أحمد" />
-                </div>
-                <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                  <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">البريد الإلكتروني</label>
-                  <input name="email" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm text-right" type="email" placeholder="email@example.com" dir="rtl" />
-                </div>
-              </div>
-              <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">الموضوع</label>
-                <input name="subject" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder="استشارة قانونية" />
-              </div>
-              <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">رسالتك</label>
-                <textarea name="message" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm resize-none" rows={4} placeholder="تفاصيل بخصوص طلبك..."></textarea>
-              </div>
-              <button className="w-full bg-[#D4A745] hover:bg-[#B8860B] text-black py-4 rounded-2xl font-bold uppercase tracking-wider transition-colors mt-2" type="submit">
-                إرسال الرسالة
-              </button>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </Section>
 
