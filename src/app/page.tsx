@@ -13,16 +13,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[92vh] flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-l from-surface via-surface/80 to-transparent"></div>
           <img
             alt="Lady Justice"
-            className="w-full h-full object-cover object-[85%_30%] lg:object-[center_30%] opacity-50"
+            className="w-full h-full object-cover object-[20%_30%] lg:object-[center_30%] opacity-70 lg:opacity-50"
             src="/lawyer%20tanger.png"
           />
           {/* Elegant multi-layer gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-surface/40 to-surface/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-l from-surface via-surface/60 to-transparent lg:via-surface/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-surface/70 lg:to-surface/90"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-black/10 lg:bg-black/20"></div>
         </div>
         <div className="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col items-start text-right">
           <span className="text-primary tracking-[0.2em] font-label text-sm mb-4 uppercase">Avocate au Barreau de Tanger</span>
