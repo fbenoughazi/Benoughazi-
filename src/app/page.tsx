@@ -16,7 +16,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-l from-surface via-surface/80 to-transparent"></div>
           <img
             alt="Lady Justice"
-            className="w-full h-full object-cover object-[center_30%] opacity-50"
+            className="w-full h-full object-cover object-[85%_30%] lg:object-[center_30%] opacity-50"
             src="/lawyer%20tanger.png"
           />
           {/* Elegant multi-layer gradient overlay */}
