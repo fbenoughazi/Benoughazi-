@@ -15,7 +15,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img
             alt="Lady Justice"
-            className="w-full h-full object-cover object-[20%_30%] lg:object-[center_30%] opacity-70 lg:opacity-50"
+            className="w-full h-full object-cover object-[40%_30%] lg:object-[center_30%] opacity-70 lg:opacity-50"
             src="/lawyer%20tanger.png"
           />
           {/* Elegant multi-layer gradient overlay */}
