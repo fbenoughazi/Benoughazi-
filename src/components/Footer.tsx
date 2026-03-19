@@ -32,7 +32,7 @@ export function Footer() {
         </div>
         
         {/* Copyright at the bottom */}
-        <div className="mt-12 pt-8 border-t border-white/10 text-center md:text-right">
+        <div className="mt-12 pt-8 border-t border-white/10 text-left">
           <p className="text-on-surface-variant text-sm font-label">2026 Maître Fatima Ezzahra Benoughazi All Rights Reserved</p>
         </div>
       </div>
