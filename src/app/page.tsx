@@ -4,10 +4,11 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { ContactForm } from "@/components/ContactForm";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Home() {
-  const { t, lang } = useLanguage();
+  const { t } = useLanguage();
 
   return (
     <>
@@ -127,40 +128,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative p-10 rounded-[32px] border border-white/10 bg-[#0A0A0A]/60 backdrop-blur-2xl overflow-hidden shadow-2xl">
-            {/* Top gold glowing accent */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-[#D4A745]/60 to-transparent"></div>
-            {/* Soft radial glow entering from top center */}
-            <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-[#D4A745]/10 rounded-full blur-[80px] pointer-events-none"></div>
-
-            <div className="relative z-10 mb-8 text-center text-white">
-              <SectionTitle className="mb-2">{t.contact.formTitle}</SectionTitle>
-            </div>
-
-            <form className="relative z-10 space-y-5">
-              <div className="grid grid-cols-2 gap-5">
-                <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                  <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">{t.contact.nameLabel}</label>
-                  <input required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder={t.contact.namePlaceholder} name="name" />
-                </div>
-                <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                  <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">{t.contact.emailLabel}</label>
-                  <input required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="email" placeholder="email@example.com" dir={lang === "ar" ? "rtl" : "ltr"} name="email" />
-                </div>
-              </div>
-              <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">{t.contact.subjectLabel}</label>
-                <input required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder={t.contact.subjectPlaceholder} name="subject" />
-              </div>
-              <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-                <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">{t.contact.messageLabel}</label>
-                <textarea name="message" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm resize-none" rows={4} placeholder={t.contact.messagePlaceholder}></textarea>
-              </div>
-              <button className="w-full bg-[#D4A745] hover:bg-[#B8860B] text-black py-4 rounded-2xl font-bold uppercase tracking-wider transition-colors mt-2 disabled:opacity-60" type="submit">
-                {t.contact.send}
-              </button>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </Section>
 
