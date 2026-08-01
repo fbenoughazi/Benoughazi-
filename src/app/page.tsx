@@ -6,18 +6,6 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { useLanguage } from "@/components/LanguageProvider";
 
-const expertiseIcons = [
-  "balance",
-  "business_center",
-  "badge",
-  "domain",
-  "gavel",
-  "public",
-  "account_balance_wallet",
-  "account_balance",
-  "handshake",
-];
-
 export default function Home() {
   const { t, lang } = useLanguage();
 
@@ -45,8 +33,7 @@ export default function Home() {
             {t.hero.name}
           </h1>
           <p className="text-2xl lg:text-3xl font-headline text-secondary mb-10 max-w-2xl">
-            {t.hero.subtitle} <br />
-            <span className="text-lg text-on-surface-variant font-body opacity-80">{t.hero.subtitle2}</span>
+            {t.hero.subtitle}
           </p>
         </div>
       </section>
@@ -91,7 +78,6 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-10">
           {t.expertise.cards.map((card, i) => (
             <Card key={i} className="expertise-card p-8 flex flex-col gap-4">
-              <span className="material-symbols-outlined text-primary text-4xl" data-icon={expertiseIcons[i]}>{expertiseIcons[i]}</span>
               <h3 className="text-xl font-headline font-bold">{card.title}</h3>
               <p className="text-on-surface-variant text-sm leading-relaxed">{card.desc}</p>
             </Card>
@@ -118,7 +104,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-white font-bold text-lg mb-1">{t.contact.phone}</p>
-                  <p className="text-white/60 text-sm uppercase tracking-widest transition-colors duration-500 group-hover:text-white/80" dir="ltr">0531145175 / 0663559354</p>
+                  <p className="text-white/60 text-sm uppercase tracking-widest transition-colors duration-500 group-hover:text-white/80" dir="ltr">+212 5 31 14 51 75 / +212 6 63 55 93 54</p>
                 </div>
               </div>
               <div className="flex items-center gap-6 group cursor-pointer">

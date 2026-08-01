@@ -6,18 +6,6 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { useLanguage } from "@/components/LanguageProvider";
 
-const expertiseIcons = [
-  "balance",
-  "business_center",
-  "badge",
-  "domain",
-  "gavel",
-  "public",
-  "account_balance_wallet",
-  "account_balance",
-  "handshake",
-];
-
 export default function Interests() {
   const { t } = useLanguage();
 
@@ -35,7 +23,6 @@ export default function Interests() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-10">
           {t.expertise.cards.map((card, i) => (
             <Card key={i} className="expertise-card p-8 flex flex-col gap-4">
-              <span className="material-symbols-outlined text-primary text-4xl" data-icon={expertiseIcons[i]}>{expertiseIcons[i]}</span>
               <h3 className="text-xl font-headline font-bold">{card.title}</h3>
               <p className="text-on-surface-variant text-sm leading-relaxed">{card.desc}</p>
             </Card>

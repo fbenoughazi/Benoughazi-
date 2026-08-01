@@ -5,14 +5,13 @@ export const translations = {
     nav: {
       home: "الرئيسية",
       bio: "بطاقة تعريفية",
-      interests: "مجالات الخبرة",
+      interests: "مجالات الممارسة القانونية",
       contact: "للتواصل",
     },
     hero: {
       badge: "Avocate au Barreau de Tanger",
       name: "الأستاذة فاطمة الزهراء بنوغازي",
       subtitle: "محامية لدى هيئة المحامين بطنجة",
-      subtitle2: "Expertise Juridique Internationale & Conseil Stratégique",
     },
     about: {
       title: "نبذة تعريفية",
@@ -20,50 +19,54 @@ export const translations = {
       p2: "تلقت الأستاذة بنوغازي فاطمة الزهراء تكوينها الأكاديمي بجامعة عبد المالك السعدي بطنجة، حيث حصلت على الإجازة في القانون الخاص والماستر في القانون المدني والأعمال. كما حصلت لاحقًا على منحة تشيفنينغ (Chevening) المقدمة من وزارة الخارجية البريطانية، لمتابعة دراستها الجامعية بجامعة ساسكس (Sussex) بالمملكة المتحدة، متخصصة في مجال القانون والتنمية الدولية.",
     },
     expertise: {
-      title: "مجالات الخبرة",
+      title: "مجالات الممارسة القانونية",
       cards: [
         {
           title: "القانون المدني",
-          desc: "يشمل معالجة النزاعات المدنية بين الأفراد، مثل العقود، المسؤولية المدنية، التعويضات، والأحوال الشخصية، مع ضمان حماية الحقوق القانونية للأطراف.",
+          desc: "المواكبة في النزاعات المدنية المتعلقة بالعقود، المسؤولية المدنية، التعويضات، الأحوال الشخصية، وحماية الحقوق الخاصة للأفراد.",
         },
         {
-          title: "قانون التجارة والأعمال",
-          desc: "يعنى بمواضيع الشركات والتجار في العقود التجارية، النزاعات التجارية، تأسيس الشركات، وحماية المصالح القانونية للمقاولات.",
+          title: "قانون الأعمال والتجارة",
+          desc: "المواكبة القانونية للشركات والتجار في العقود التجارية، النزاعات التجارية، تأسيس الشركات، وحماية المصالح القانونية للمقاولات.",
         },
         {
           title: "قانون الشغل",
-          desc: "يتعلق بعلاقات الشغل بين الأجير والمشغل، نزاعات العمل، عقود الشغل، التعويضات، مع احترام التشريعات الاجتماعية الجاري بها العمل.",
+          desc: "معالجة النزاعات المرتبطة بعلاقات الشغل، عقود العمل، الفصل، التعويضات، واحترام التشريعات الاجتماعية الجاري بها العمل.",
         },
         {
           title: "القانون العقاري",
-          desc: "يشمل القضايا المتعلقة بالعقارات مثل البيع والشراء، النزاعات العقارية، التحفيظ العقاري، وحقوق الملكية.",
+          desc: "المواكبة في الملفات المتعلقة بالبيع والشراء، النزاعات العقارية، التحفيظ العقاري، الملكية المشتركة، وحماية الحقوق العينية.",
         },
         {
-          title: "قانون الملكية الصناعية والتجارية",
-          desc: "يعنى بحماية العلامات التجارية، براءات الاختراع، الأسماء التجارية، وحقوق الملكية الفكرية للمقاولات والأفراد.",
+          title: "الملكية الفكرية والصناعية",
+          desc: "المواكبة في حماية العلامات التجارية، الأسماء التجارية، براءات الاختراع، وحقوق الملكية الفكرية والصناعية.",
         },
         {
           title: "القانون الدولي الخاص",
-          desc: "يتناول القضايا ذات الطابع الدولي التي تشمل أطرافًا من دول مختلفة، مثل النزاعات العابرة للحدود، العقود الدولية، والأحوال الشخصية الدولية.",
-        },
-        {
-          title: "القانون الإداري",
-          desc: "يهتم بتنظيم نشاط الإدارة العامة، ويحدد القواعد التي تحكم عمل الهيئات والمؤسسات الإدارية وعلاقتها بالأفراد. يهدف هذا القانون إلى ضمان حسن سير المرافق العامة، وتحقيق المصلحة العامة، مع حماية حقوق الأفراد من تعسف الإدارة، وذلك من خلال تنظيم القرارات الإدارية، والعقود الإدارية، والمسؤولية الإدارية، والرقابة القضائية على أعمال الإدارة.",
+          desc: "معالجة الملفات ذات العنصر الأجنبي، بما في ذلك النزاعات العابرة للحدود، العقود الدولية، والأحوال الشخصية المرتبطة بأطراف من جنسيات مختلفة.",
         },
         {
           title: "القانون البنكي والتأمينات",
-          desc: "يعنى بتنظيم الأنشطة المصرفية وأعمال التأمين، ويحدد القواعد القانونية التي تحكم العلاقة بين البنوك والعملاء، وكذلك بين شركات التأمين والمؤمن لهم.",
+          desc: "المواكبة في الملفات المرتبطة بالمعاملات البنكية، عقود التأمين، المنازعات المالية، والعلاقات مع المؤسسات البنكية وشركات التأمين.",
+        },
+        {
+          title: "القانون الإداري",
+          desc: "المواكبة في القضايا المرتبطة بالإدارة، القرارات الإدارية، الصفقات العمومية، المسؤولية الإدارية، وحماية حقوق الأفراد في مواجهة الإدارة.",
+        },
+        {
+          title: "القانون البحري وقانون البحار",
+          desc: "المواكبة في القضايا المرتبطة بالنقل البحري، السفن، الموانئ، العقود والتأمينات البحرية، وكذا الملفات ذات البعد الدولي المرتبطة بالمجال البحري.",
         },
         {
           title: "الوساطة والطرق البديلة لحل النزاعات",
-          desc: "آليات قانونية بديلة عن المحاكم لحل النزاعات بشكل ودي وسريع، مثل الوساطة والتحكيم، بهدف الوصول إلى حلول فعالة ومرنة.",
+          desc: "المساهمة في البحث عن حلول ودية وقانونية للنزاعات، متى كان ذلك ممكنًا، بما يحفظ مصالح الأطراف ويقلل من تعقيد المساطر.",
         },
       ],
     },
     contact: {
       heroTitle: "للتواصل",
-      intro1: "نحن هنا للإجابة عن جميع تساؤلاتكم وتقديم الاستشارة والدعم القانوني الذي تستحقونه.",
-      intro2: "إذا رغبتم في التواصل معنا أو الحصول على استشارة، يُرجى ملء نموذج الاتصال، وسيقوم فريقنا بالرد عليكم في أقرب وقت ممكن.",
+      intro1: "يمكنكم التواصل مع المكتب لطلب موعد للاستشارة القانونية أو لتقديم لمحة موجزة عن موضوعكم، بهدف تقييم طبيعته وتحديد الإطار القانوني المناسب.",
+      intro2: "يرجى تعبئة نموذج الاتصال، وسيقوم المكتب بالرد في أقرب وقت ممكن، مع احترام السرية والقواعد المهنية المنظمة لمهنة المحاماة.",
       phone: "الهاتف",
       email: "البريد الإلكتروني",
       address: "العنوان",
@@ -83,7 +86,7 @@ export const translations = {
     },
     footer: {
       tagline1: "محامية لدى هيئة المحامين بطنجة",
-      tagline2: "Expertise Juridique Internationale & Conseil Stratégique",
+      tagline2: "استشارة قانونية ودعم مهني من منظور وطني ودولي",
       quickLinks: "روابط سريعة",
       copyright: "2026 Maître Fatima Ezzahra Benoughazi All Rights Reserved",
     },
@@ -92,14 +95,13 @@ export const translations = {
     nav: {
       home: "Home",
       bio: "Profile",
-      interests: "Areas of Expertise",
+      interests: "Legal Practice Areas",
       contact: "Contact",
     },
     hero: {
       badge: "Attorney at the Tangier Bar",
       name: "Maître Fatima Ezzahra Benoughazi",
       subtitle: "Attorney at the Tangier Bar Association",
-      subtitle2: "International Legal Expertise & Strategic Counsel",
     },
     about: {
       title: "About",
@@ -107,50 +109,54 @@ export const translations = {
       p2: "Maître Fatima Ezzahra Benoughazi received her academic training at Abdelmalek Essaadi University in Tangier, where she obtained a Bachelor's degree in Private Law and a Master's degree in Civil and Business Law. She was later awarded the Chevening Scholarship, granted by the UK Foreign Office, to pursue her graduate studies at the University of Sussex in the United Kingdom, specializing in Law and International Development.",
     },
     expertise: {
-      title: "Areas of Expertise",
+      title: "Legal Practice Areas",
       cards: [
         {
           title: "Civil Law",
-          desc: "Handles civil disputes between individuals, such as contracts, civil liability, compensation, and personal status matters, while ensuring the protection of the parties' legal rights.",
+          desc: "Legal support in civil disputes relating to contracts, civil liability, compensation, personal status matters, and the protection of individuals' private rights.",
         },
         {
           title: "Business & Commercial Law",
-          desc: "Covers matters concerning companies and traders, including commercial contracts, commercial disputes, company formation, and protecting the legal interests of businesses.",
+          desc: "Legal support for companies and traders in commercial contracts, business disputes, company formation, and the protection of corporate legal interests.",
         },
         {
           title: "Labor Law",
-          desc: "Concerns employment relationships between employees and employers, labor disputes, employment contracts, and compensation, in compliance with applicable social legislation.",
+          desc: "Assistance in matters relating to employment relationships, employment contracts, dismissal, compensation, and compliance with applicable labor and social legislation.",
         },
         {
           title: "Real Estate Law",
-          desc: "Covers property-related matters such as sale and purchase, real estate disputes, land registration, and ownership rights.",
+          desc: "Legal support in matters relating to sale and purchase transactions, real estate disputes, land registration, co-ownership, and the protection of property rights.",
         },
         {
-          title: "Industrial & Commercial Property Law",
-          desc: "Focuses on protecting trademarks, patents, trade names, and the intellectual property rights of businesses and individuals.",
+          title: "Intellectual Property Law",
+          desc: "Assistance in matters relating to trademarks, trade names, patents, and intellectual property rights.",
         },
         {
           title: "Private International Law",
-          desc: "Addresses cases of an international nature involving parties from different countries, such as cross-border disputes, international contracts, and international personal status matters.",
-        },
-        {
-          title: "Administrative Law",
-          desc: "Governs the activity of public administration, defining the rules for administrative bodies and institutions and their relationship with individuals. It aims to ensure the proper functioning of public services and the public interest, while protecting individuals' rights from administrative abuse, through the regulation of administrative decisions, administrative contracts, administrative liability, and judicial oversight of administrative acts.",
+          desc: "Handling matters involving a foreign element, including cross-border disputes, international contracts, and personal status matters involving parties of different nationalities.",
         },
         {
           title: "Banking & Insurance Law",
-          desc: "Regulates banking and insurance activities, defining the legal rules governing the relationship between banks and their clients, as well as between insurance companies and the insured.",
+          desc: "Legal support in matters relating to banking transactions, insurance contracts, financial disputes, and relations with banks and insurance companies.",
+        },
+        {
+          title: "Administrative Law",
+          desc: "Assistance in matters involving public administration, administrative decisions, public procurement, administrative liability, and the protection of individuals' rights in relation to public authorities.",
+        },
+        {
+          title: "Maritime Law and Law of the Sea",
+          desc: "Legal support in matters relating to maritime transport, vessels, ports, maritime contracts and insurance, as well as legal issues with an international dimension connected to maritime affairs.",
         },
         {
           title: "Mediation & Alternative Dispute Resolution",
-          desc: "Legal mechanisms that offer an alternative to courts for resolving disputes amicably and quickly, such as mediation and arbitration, aiming for effective and flexible solutions.",
+          desc: "Support in exploring amicable and legally grounded solutions to disputes, where appropriate, in order to preserve the parties' interests and reduce procedural complexity.",
         },
       ],
     },
     contact: {
       heroTitle: "Contact",
-      intro1: "We are here to answer all your questions and provide the consultation and legal support you deserve.",
-      intro2: "If you would like to get in touch or request a consultation, please fill out the contact form and our team will get back to you as soon as possible.",
+      intro1: "You may contact the office to request an appointment for a legal consultation or to provide a brief overview of your matter, in order to assess its nature and identify the appropriate legal framework.",
+      intro2: "Please complete the contact form, and the office will respond as soon as possible, while respecting confidentiality and the professional rules governing the legal profession.",
       phone: "Phone",
       email: "Email",
       address: "Address",
@@ -170,7 +176,7 @@ export const translations = {
     },
     footer: {
       tagline1: "Attorney at the Tangier Bar Association",
-      tagline2: "International Legal Expertise & Strategic Counsel",
+      tagline2: "Legal Advisory and Professional Support with a National and International Perspective",
       quickLinks: "Quick Links",
       copyright: "2026 Maître Fatima Ezzahra Benoughazi All Rights Reserved",
     },
