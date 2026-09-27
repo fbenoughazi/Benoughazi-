@@ -11,12 +11,30 @@ export const translations = {
     hero: {
       badge: "Avocate au Barreau de Tanger",
       name: "الأستاذة فاطمة الزهراء بنوغازي",
-      subtitle: "محامية لدى هيئة المحامين بطنجة",
+      subtitle: "محامية لدى هيئة المحامين",
     },
     about: {
       title: "نبذة تعريفية",
-      p1: "الأستاذة بنوغازي فاطمة الزهراء محامية بهيئة المحامين بطنجة، راكمت تجربة مهنية متنوعة في معالجة الملفات القانونية والترافع أمام مختلف المحاكم، التمثيل القانوني للأفراد والشركات، والدفاع عن الحقوق والمصالح القانونية مع اهتمام خاص بالقضايا ذات البعد الحقوقي والاجتماعي والدولي.",
-      p2: "تلقت الأستاذة بنوغازي فاطمة الزهراء تكوينها الأكاديمي بجامعة عبد المالك السعدي بطنجة، حيث حصلت على الإجازة في القانون الخاص والماستر في القانون المدني والأعمال. كما حصلت لاحقًا على منحة تشيفنينغ (Chevening) المقدمة من وزارة الخارجية البريطانية، لمتابعة دراستها الجامعية بجامعة ساسكس (Sussex) بالمملكة المتحدة، متخصصة في مجال القانون والتنمية الدولية.",
+      p1: "الأستاذة فاطمة الزهراء بنوغازي محامية بهيئة المحامين بطنجة، راكمت تجربة مهنية متنوعة في معالجة الملفات القانونية والترافع أمام مختلف المحاكم، التمثيل القانوني للأفراد والشركات، والدفاع عن الحقوق والمصالح القانونية مع اهتمام خاص بالقضايا ذات البعد الحقوقي والاجتماعي والدولي.",
+      p2: "تلقت الأستاذة فاطمة الزهراء بنوغازي تكوينها الأكاديمي بجامعة عبد المالك السعدي بطنجة، قبل أن تحصل لاحقًا على منحة تشيفنينغ (Chevening) المقدمة من وزارة الخارجية البريطانية لمتابعة دراستها الجامعية بجامعة ساسكس (Sussex) بالمملكة المتحدة في مجال القانون والتنمية الدولية.",
+    },
+    academic: {
+      title: "المسار الأكاديمي",
+      imageAlt: "الصورة الشخصية للأستاذة فاطمة الزهراء بنوغازي",
+      items: [
+        {
+          degree: "ماستر في القانون والتنمية الدولية",
+          institution: "جامعة ساسكس، المملكة المتحدة (منحة تشيفنينغ)",
+        },
+        {
+          degree: "ماستر في القانون المدني والأعمال",
+          institution: "جامعة عبد المالك السعدي، طنجة",
+        },
+        {
+          degree: "إجازة في القانون الخاص",
+          institution: "جامعة عبد المالك السعدي، طنجة",
+        },
+      ],
     },
     expertise: {
       title: "مجالات الممارسة القانونية",
@@ -70,7 +88,9 @@ export const translations = {
       phone: "الهاتف",
       email: "البريد الإلكتروني",
       address: "العنوان",
-      addressValue: "زنقة العراق، إقامة رضوان، طنجة، المغرب",
+      addressValue: "مكتب رقم 7، زنقة العراق، إقامة رضوان، طنجة، المغرب",
+      mapTitle: "موقع المكتب على خرائط Google",
+      mapLink: "فتح الموقع على خرائط Google",
       formTitle: "تواصل معنا",
       nameLabel: "الاسم الكامل",
       namePlaceholder: "محمد أحمد",
@@ -85,8 +105,7 @@ export const translations = {
       heroTitle: "بطاقة تعريفية",
     },
     footer: {
-      tagline1: "محامية لدى هيئة المحامين بطنجة",
-      tagline2: "استشارة قانونية ودعم مهني من منظور وطني ودولي",
+      tagline1: "محامية لدى هيئة المحامين",
       quickLinks: "روابط سريعة",
       copyright: "2026 Maître Fatima Ezzahra Benoughazi All Rights Reserved",
     },
@@ -101,12 +120,30 @@ export const translations = {
     hero: {
       badge: "Attorney at the Tangier Bar",
       name: "Maître Fatima Ezzahra Benoughazi",
-      subtitle: "Attorney at the Tangier Bar Association",
+      subtitle: "Attorney at the Bar Association",
     },
     about: {
       title: "About",
       p1: "Maître Fatima Ezzahra Benoughazi is a lawyer at the Tangier Bar Association. She has accumulated diverse professional experience handling legal cases and pleading before various courts, providing legal representation for individuals and companies, and defending legal rights and interests, with particular attention to cases with human rights, social, and international dimensions.",
       p2: "Maître Fatima Ezzahra Benoughazi received her academic training at Abdelmalek Essaadi University in Tangier, where she obtained a Bachelor's degree in Private Law and a Master's degree in Civil and Business Law. She was later awarded the Chevening Scholarship, granted by the UK Foreign Office, to pursue her graduate studies at the University of Sussex in the United Kingdom, specializing in Law and International Development.",
+    },
+    academic: {
+      title: "Academic Background",
+      imageAlt: "Personal photo of Maître Fatima Ezzahra Benoughazi",
+      items: [
+        {
+          degree: "Master's degree in Law and International Development",
+          institution: "University of Sussex, United Kingdom (Chevening Scholar)",
+        },
+        {
+          degree: "Master's degree in Civil and Business Law",
+          institution: "Abdelmalek Essaadi University, Tangier",
+        },
+        {
+          degree: "Bachelor's degree in Private Law",
+          institution: "Abdelmalek Essaadi University, Tangier",
+        },
+      ],
     },
     expertise: {
       title: "Legal Practice Areas",
@@ -160,7 +197,9 @@ export const translations = {
       phone: "Phone",
       email: "Email",
       address: "Address",
-      addressValue: "Rue d'Irak, Résidence Radwan, Tangier, Morocco",
+      addressValue: "Bureau No. 7, Rue d'Irak, Résidence Radwan, Tangier, Morocco",
+      mapTitle: "Office location on Google Maps",
+      mapLink: "Open in Google Maps",
       formTitle: "Get in Touch",
       nameLabel: "Full Name",
       namePlaceholder: "John Smith",
@@ -175,8 +214,7 @@ export const translations = {
       heroTitle: "Profile",
     },
     footer: {
-      tagline1: "Attorney at the Tangier Bar Association",
-      tagline2: "Legal Advisory and Professional Support with a National and International Perspective",
+      tagline1: "Attorney at the Bar Association",
       quickLinks: "Quick Links",
       copyright: "2026 Maître Fatima Ezzahra Benoughazi All Rights Reserved",
     },

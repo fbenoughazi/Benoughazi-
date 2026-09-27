@@ -5,6 +5,8 @@ import { Card } from "@/components/Card";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { ContactForm } from "@/components/ContactForm";
+import { AcademicBackground } from "@/components/AcademicBackground";
+import { ContactDetails } from "@/components/ContactDetails";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[92vh] flex items-center pt-20 overflow-hidden">
+      <section className="relative min-h-[640px] h-[92vh] flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             alt="Lady Justice"
@@ -40,8 +42,8 @@ export default function Home() {
       </section>
 
       {/* About Section (نبذة تعريفية) */}
-      <Section id="about" className="py-24 bg-surface-container-low">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <Section id="about" className="py-16 lg:py-24 bg-surface-container-low">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative group overflow-hidden rounded-xl shadow-2xl aspect-[4/5] max-w-[480px] mx-auto lg:mr-auto lg:ml-0">
               <div className="absolute -top-4 -right-4 w-32 h-32 border-r-2 border-t-2 border-primary/30 z-10 pointer-events-none"></div>
@@ -54,8 +56,8 @@ export default function Home() {
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none"></div>
             </div>
           </div>
-          <div className="order-1 lg:order-2 space-y-8">
-            <SectionTitle className="text-primary flex items-center gap-4">
+          <div className="order-1 lg:order-2 space-y-8 text-start">
+            <SectionTitle className="text-primary flex flex-wrap items-center gap-4">
               {t.about.title}
               <span className="h-[2px] w-20 bg-primary/30"></span>
             </SectionTitle>
@@ -67,18 +69,20 @@ export default function Home() {
         </div>
       </Section>
 
+      <AcademicBackground />
+
       {/* Expertise Section (مجالات الخبرة) */}
-      <Section id="expertise" className="py-32 bg-surface relative overflow-hidden">
+      <Section id="expertise" className="py-20 lg:py-32 bg-surface relative overflow-hidden">
         {/* Soft Ambient Gold Glow */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/[0.08] rounded-full blur-[140px] pointer-events-none translate-x-1/4 -translate-y-1/4 z-0"></div>
 
-        <div className="text-center mb-20 relative z-10">
+        <div className="text-center mb-12 lg:mb-20 relative z-10">
           <SectionTitle className="lg:text-5xl text-on-surface mb-4">{t.expertise.title}</SectionTitle>
         </div>
         {/* Bento Grid Layout for Expertise */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-10">
           {t.expertise.cards.map((card, i) => (
-            <Card key={i} className="expertise-card p-8 flex flex-col gap-4">
+            <Card key={i} className="expertise-card p-6 sm:p-8 flex flex-col gap-4">
               <h3 className="text-xl font-headline font-bold">{card.title}</h3>
               <p className="text-on-surface-variant text-sm leading-relaxed">{card.desc}</p>
             </Card>
@@ -87,8 +91,8 @@ export default function Home() {
       </Section>
 
       {/* Contact Section */}
-      <Section id="contact" className="py-32 bg-surface">
-        <div className="grid lg:grid-cols-2 gap-20">
+      <Section id="contact" className="py-20 lg:py-32 bg-surface">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div className="space-y-12">
             <div>
               <img src="/fatimalogo.png" alt="Maître Fatima" className="h-16 w-auto mb-8" />
@@ -98,35 +102,7 @@ export default function Home() {
                 {t.contact.intro2}
               </p>
             </div>
-            <div className="space-y-8">
-              <div className="flex items-center gap-6 group cursor-pointer">
-                <div className="w-16 h-16 bg-transparent border border-white/5 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-500 group-hover:border-[#D4A745]/40 group-hover:bg-white/[0.05]">
-                  <span className="material-symbols-outlined text-[#D4A745] text-2xl transition-all duration-500 ease-in-out group-hover:scale-[1.3] group-hover:-translate-y-1" data-icon="call">call</span>
-                </div>
-                <div>
-                  <p className="text-white font-bold text-lg mb-1">{t.contact.phone}</p>
-                  <p className="text-white/60 text-sm uppercase tracking-widest transition-colors duration-500 group-hover:text-white/80" dir="ltr">+212 5 31 14 51 75 / +212 6 63 55 93 54</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-6 group cursor-pointer">
-                <div className="w-16 h-16 bg-transparent border border-white/5 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-500 group-hover:border-[#D4A745]/40 group-hover:bg-white/[0.05]">
-                  <span className="material-symbols-outlined text-[#D4A745] text-2xl transition-all duration-500 ease-in-out group-hover:scale-[1.3] group-hover:-translate-y-1" data-icon="mail">mail</span>
-                </div>
-                <div>
-                  <p className="text-white font-bold text-lg mb-1">{t.contact.email}</p>
-                  <p className="text-white/60 text-sm tracking-wider transition-colors duration-500 group-hover:text-white/80">contact@benoughazilawfirm.com</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-6 group cursor-pointer">
-                <div className="w-16 h-16 bg-transparent border border-white/5 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-500 group-hover:border-[#D4A745]/40 group-hover:bg-white/[0.05]">
-                  <span className="material-symbols-outlined text-[#D4A745] text-2xl transition-all duration-500 ease-in-out group-hover:scale-[1.3] group-hover:-translate-y-1" data-icon="location_on">location_on</span>
-                </div>
-                <div>
-                  <p className="text-white font-bold text-lg mb-1">{t.contact.address}</p>
-                  <p className="text-white/60 text-sm transition-colors duration-500 group-hover:text-white/80">{t.contact.addressValue}</p>
-                </div>
-              </div>
-            </div>
+            <ContactDetails email="contact@benoughazilawfirm.com" />
           </div>
           <ContactForm />
         </div>

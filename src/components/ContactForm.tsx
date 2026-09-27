@@ -41,7 +41,7 @@ export function ContactForm() {
     lang === "ar" ? "حدث خطأ أثناء الإرسال. يرجى المحاولة مجدداً." : "An error occurred while sending. Please try again.";
 
   return (
-    <div className="relative p-10 rounded-[32px] border border-white/10 bg-[#0A0A0A]/60 backdrop-blur-2xl overflow-hidden shadow-2xl">
+    <div className="relative self-start h-fit p-5 sm:p-8 lg:p-10 rounded-[24px] sm:rounded-[32px] border border-white/10 bg-[#0A0A0A]/60 backdrop-blur-2xl overflow-hidden shadow-2xl">
       {/* Top gold glowing accent */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-[#D4A745]/60 to-transparent"></div>
       {/* Soft radial glow entering from top center */}
@@ -56,38 +56,38 @@ export function ContactForm() {
           <div className="w-20 h-20 rounded-full bg-[#D4A745]/20 border border-[#D4A745]/40 flex items-center justify-center">
             <span className="material-symbols-outlined text-[#D4A745] text-4xl">check_circle</span>
           </div>
-          <h3 className="text-white text-2xl font-bold">{successTitle}</h3>
+          <h3 className="text-white text-xl sm:text-2xl font-bold leading-snug">{successTitle}</h3>
           <p className="text-white/60 text-sm leading-relaxed">{successBody}</p>
           <button
             onClick={() => setStatus("idle")}
-            className="mt-2 border border-[#D4A745]/50 text-[#D4A745] px-8 py-3 rounded-xl text-sm hover:bg-[#D4A745]/10 transition-colors"
+            className="mt-2 border border-[#D4A745]/50 text-[#D4A745] px-6 sm:px-8 py-3 rounded-xl text-sm leading-snug hover:bg-[#D4A745]/10 transition-colors"
           >
             {sendAnother}
           </button>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="relative z-10 space-y-5">
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-              <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">{t.contact.nameLabel}</label>
+              <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-normal sm:tracking-wider leading-relaxed">{t.contact.nameLabel}</label>
               <input name="name" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder={t.contact.namePlaceholder} />
             </div>
             <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-              <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">{t.contact.emailLabel}</label>
+              <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-normal sm:tracking-wider leading-relaxed">{t.contact.emailLabel}</label>
               <input name="email" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="email" placeholder="email@example.com" dir={lang === "ar" ? "rtl" : "ltr"} />
             </div>
           </div>
           <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-            <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">{t.contact.subjectLabel}</label>
+            <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-normal sm:tracking-wider leading-relaxed">{t.contact.subjectLabel}</label>
             <input name="subject" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm" type="text" placeholder={t.contact.subjectPlaceholder} />
           </div>
           <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 transition-colors focus-within:border-[#D4A745]/40 hover:bg-white/[0.05]">
-            <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-wider">{t.contact.messageLabel}</label>
+            <label className="block text-xs font-label text-white/50 mb-1 uppercase tracking-normal sm:tracking-wider leading-relaxed">{t.contact.messageLabel}</label>
             <textarea name="message" required className="w-full bg-transparent border-none p-0 focus:ring-0 text-white text-sm resize-none" rows={4} placeholder={t.contact.messagePlaceholder}></textarea>
           </div>
           {status === "error" && <p className="text-red-400 text-sm text-center">{errorMsg}</p>}
           <button
-            className="w-full bg-[#D4A745] hover:bg-[#B8860B] text-black py-4 rounded-2xl font-bold uppercase tracking-wider transition-colors mt-2 disabled:opacity-60"
+            className="w-full bg-[#D4A745] hover:bg-[#B8860B] text-black py-4 px-4 rounded-2xl font-bold uppercase tracking-normal sm:tracking-wider leading-snug transition-colors mt-2 disabled:opacity-60"
             type="submit"
             disabled={status === "submitting"}
           >

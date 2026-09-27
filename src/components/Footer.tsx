@@ -15,8 +15,7 @@ export function Footer() {
           <div className="space-y-4">
             <img src="/fatimalogo.png" alt="Maître Fatima Logo" className="h-16 w-auto mb-4" />
             <p className="text-on-surface-variant text-sm leading-relaxed">
-              {t.footer.tagline1}<br />
-              {t.footer.tagline2}
+              {t.footer.tagline1}
             </p>
             <a
               href="https://www.linkedin.com/in/fatima-ezzahra-benoughazi-52255a135/"
@@ -45,7 +44,7 @@ export function Footer() {
         </div>
 
         {/* Copyright at the bottom */}
-        <div className="mt-12 pt-8 border-t border-white/10 text-left">
+        <div className="mt-12 pt-8 border-t border-white/10 text-start">
           <p className="text-on-surface-variant text-sm font-label">{t.footer.copyright}</p>
         </div>
       </div>

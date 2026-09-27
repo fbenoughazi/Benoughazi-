@@ -4,6 +4,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { HeroBanner } from "@/components/HeroBanner";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { AcademicBackground } from "@/components/AcademicBackground";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Bio() {
@@ -15,8 +16,8 @@ export default function Bio() {
 
       <HeroBanner title={t.bio.heroTitle} />
       {/* Main Bio Content */}
-      <Section id="about" className="py-24 bg-surface min-h-screen">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <Section id="about" className="py-16 lg:py-24 bg-surface min-h-screen">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative group overflow-hidden rounded-xl shadow-2xl aspect-[4/5] max-w-[480px] mx-auto lg:mr-auto lg:ml-0">
               <div className="absolute -top-4 -right-4 w-32 h-32 border-r-2 border-t-2 border-primary/30 z-10 pointer-events-none"></div>
@@ -29,8 +30,8 @@ export default function Bio() {
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none"></div>
             </div>
           </div>
-          <div className="order-1 lg:order-2 space-y-8">
-            <SectionTitle className="text-primary flex items-center gap-4">
+          <div className="order-1 lg:order-2 space-y-8 text-start">
+            <SectionTitle className="text-primary flex flex-wrap items-center gap-4">
               {t.about.title}
               <span className="h-[2px] w-20 bg-primary/30"></span>
             </SectionTitle>
@@ -41,6 +42,8 @@ export default function Bio() {
           </div>
         </div>
       </Section>
+
+      <AcademicBackground />
 
       {/* Footer */}
       <Footer />
